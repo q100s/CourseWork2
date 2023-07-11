@@ -10,7 +10,6 @@ import pro.sky.java.course2.javaquestionsapp.Question;
 import pro.sky.java.course2.javaquestionsapp.questionExceptions.WrongQuestionsAmountRequest;
 
 import java.util.List;
-import java.util.Random;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
@@ -34,9 +33,9 @@ public class ExaminerServiceImplTest {
     }
     @Test
     void returnRandomAmountOfQuestions() {
-        Random random = new Random();
-        when(questionService.getRandomQuestion()).thenReturn(QUESTIONS.get(random.nextInt(0, QUESTIONS.size())));
-        int expectedAmount = 1;
+        when(questionService.getRandomQuestion()).thenReturn(QUESTIONS.get(0)).thenReturn(QUESTIONS.get(1)).
+                thenReturn(QUESTIONS.get(2));
+        int expectedAmount = 3;
         assertEquals(expectedAmount, examinerService.getQuestions(expectedAmount).size());
     }
     @Test
