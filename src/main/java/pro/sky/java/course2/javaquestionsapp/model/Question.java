@@ -1,4 +1,4 @@
-package pro.sky.java.course2.javaquestionsapp;
+package pro.sky.java.course2.javaquestionsapp.model;
 import java.util.Objects;
 
 public class Question {

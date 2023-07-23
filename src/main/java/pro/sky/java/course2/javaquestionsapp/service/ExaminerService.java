@@ -1,6 +1,6 @@
 package pro.sky.java.course2.javaquestionsapp.service;
 
-import pro.sky.java.course2.javaquestionsapp.Question;
+import pro.sky.java.course2.javaquestionsapp.model.Question;
 
 import java.util.Collection;
 

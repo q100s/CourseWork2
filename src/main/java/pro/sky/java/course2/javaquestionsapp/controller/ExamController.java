@@ -3,7 +3,7 @@ package pro.sky.java.course2.javaquestionsapp.controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
-import pro.sky.java.course2.javaquestionsapp.Question;
+import pro.sky.java.course2.javaquestionsapp.model.Question;
 import pro.sky.java.course2.javaquestionsapp.service.ExaminerService;
 
 import java.util.Collection;
